@@ -1,0 +1,12 @@
+<html>
+<body>
+<form action='/details' method="POST">
+<div> Student Name <input type="text" name = "student_name" ></input></div>
+<div> Sex <input type="text" name = "sex" ></input>
+</div>
+<div> Age <input type="text" name = "age" ></input></div>
+<div> Mark<input type="text" name = "mark" ></input></div>
+<div><input type="submit" value="submit"></div>
+</form>
+</body>
+</html>
