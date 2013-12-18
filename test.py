@@ -6,9 +6,6 @@ from flask import redirect,Response
 
 app = Flask(__name__)
 
-
-
-
 @app.route("/")
 def mainpage():
 	resp = Response("""<html><body>
