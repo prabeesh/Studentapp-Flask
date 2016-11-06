@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+<body>
+<form action="/{{ action }}" method="POST">
+    <div> Student Name <input type="text" name="{{ action }}"></div>
+    <div><button type="submit" value="submit">{{ action|title }}</button> </div>
+</form>
+</body>
+</html>

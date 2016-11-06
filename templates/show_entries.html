@@ -1,10 +1,12 @@
 <!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
 {% block body %}
-  <ul class=entries>
-  {% for entry in entries %}
+<ul class=entries>
+    {% for entry in entries %}
     <li>{{ entry.name }} {{entry.age|safe}} {{entry.sex|safe}} {{entry.mark|safe}}
-  {% else %}
-    <li><em>Unbelievable.  No entries here so far</em>
-  {% endfor %}
-  </ul>
+        {% else %}
+    <li><em>Unbelievable. No entries here so far</em>
+        {% endfor %}
+</ul>
 {% endblock %}
